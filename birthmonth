@@ -1,0 +1,47 @@
+declare -A mon
+read -p "enter the year :" year
+if(($year==1992 || $year==1993))
+then
+read -p "enter the month number :" num
+case $num in
+1)mon[1]={abi,prabu,kavi,sathi,saga}
+echo ${mon[1]}
+;;
+2)mon[2]={ani,arun,abi,abai}
+echo ${mon[2]}
+;;
+3)mon[3]={karan,kavi,sara,saran}
+echo ${mon[3]}
+;;
+4)mon[4]={buvi,babu,barath,sri}
+echo ${mon[4]}
+;;
+5)mon[5]={savi,saran,mani,mathu}
+echo ${mon[5]}
+;;
+6)mon[6]={uvi,ruthra,ragu,ravi}
+echo ${mon[6]}
+;;
+7)mon[7]={navi,savi,sri,sharu}
+echo ${mon[7]}
+;;
+8)mon[8]={santho,lavi,viji,vikram}
+echo ${mon[8]}
+;;
+9)mon[9]={varun,saran,sara,kani}
+echo ${mon[9]}
+;;
+10)mon[10]={kanna,kathir,karthi,kavin}
+echo ${mon[10]}
+;;
+11)mon[11]={malini,jeni,jana,jashvin}
+echo ${mon[11]}
+;;
+12)mon[12]={mithun,muran,tamil,kani}
+echo ${mon[12]}
+;;
+*)echo "invalide month"
+esac
+else
+echo "invalide year"
+fi
